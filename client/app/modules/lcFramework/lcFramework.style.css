@@ -1,0 +1,54 @@
+.lc-title-bar{
+    background-color: rgba(255, 255, 255, .45);
+    padding: 0 20px;
+    border-bottom: 2px solid black;
+}
+
+.lc-title-area{
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+.lc-icon{    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    /*border: 1px solid #999;  */
+
+}
+
+.lc-right-side-control{
+    text-align: right;
+}
+
+.lc-logo-area{
+   
+}
+
+.lc-logo-title{
+    color: #111;
+    margin-top: 6px;
+    font-size: 22px;
+    display:block;
+}
+
+
+.lc-logo-subtitle{
+    font-size: 13px;
+    display:block;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 768px){
+    .lc-right-side-control > div{
+        text-align: right;
+    }
+    .lc-title-area{
+        text-align: left;
+    }
+}

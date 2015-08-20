@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Framework</title>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
+        
+        <link href="bower_components/ionicons/css/ionicons.min.css">
+        
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
+
+        <link href="app/modules/lcFramework/lcFramework.style.css" rel="stylesheet">
+        <link href="app/modules/lcDashboard/lcDashboard.style.css" rel="stylesheet">
+        <link href="app/app.css" rel="stylesheet">  
+        
+    </head>
+    <body class="container">
+          <lc-framework title="Myron B. Thompson Academy"
+                          subtitle="Equity & Excellence"
+                          icon-file="img/mbta_logo.png"
+                          class="col-md-12"> 
+               <main class="row">
+                    <ui-view>
+                        <!-- All Content Shown Here -->
+                    </ui-view>    
+               </main>
+           </lc-framework> 
+               <footer class="row">
+
+                    <!-- Bower Components -->
+                   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+                   <script src="bower_components/angular/angular.min.js"></script>
+                   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+                   <script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
+                   <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+                   <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+
+
+                   <!-- Custom Modules -->
+                   <script src="app/modules/lcMenu/lcMenu.module.js"></script>           
+                   <script src="app/modules/lcDashboard/lcDashboard.module.js"></script>          
+                   <script src="app/modules/lcFramework/lcFramework.module.js"></script>
+                   <script src="app/modules/lcCalender/lcCalendar.module.js"></script>
+
+                   <!-- Custom Directives -->
+                   <script src="app/modules/lcMenu/lcMenu.directive.js"></script>
+                   <script src="app/modules/lcFramework/lcFramework.directive.js"></script>
+                   <script src="app/modules/lcDashboard/lcDashboard.directive.js"></script>
+
+
+                   <!-- Main App -->
+                   <script src="app/app.js"></script>
+                   <script src="app/app.config.js"></script>
+                   <script src="app/controllers/home.controller.js"></script>
+                   <script src="app/controllers/profile.controller.js"></script>
+                   <script src="app/controllers/login.controller.js"></script>
+               </footer>
+    </body>
+</html>

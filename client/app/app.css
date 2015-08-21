@@ -25,6 +25,13 @@ body{
     background-color: #eeeeee;
 }
 
+/* Calendar */
+
+#calendar{
+    margin-top: 65px;
+    height: 400px;
+}
+
 /*Login Form*/
 
 .form-signin {

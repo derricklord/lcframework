@@ -4,7 +4,6 @@
     angular
         .module('lcFramework', [
             'lcDashboard',
-            'lcMenu',
-            'lcCalender'
+            'lcMenu'
         ]);
 })();

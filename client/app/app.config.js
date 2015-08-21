@@ -9,19 +9,24 @@
 
     /* @ngInject */
     function configuration ($provide, $stateProvider, $urlRouterProvider, $locationProvider) {
-       $urlRouterProvider.otherwise("/");
-       $locationProvider.html5Mode(true) 
-       $stateProvider
+        $urlRouterProvider.otherwise("/");
+        $locationProvider.html5Mode(true); 
+        $stateProvider
         .state('home', {
           url: "/",
           controller: 'homeCtrl as vm',
           templateUrl: "app/partials/home.html"
         })
+        .state('calendar', {
+          url: "/calendar",
+          controller: 'calendarCtrl as vm',
+          templateUrl: "app/partials/calendar.html"
+        })  
         .state('login', {
           url: "/login",
           controller: 'loginCtrl as vm',
           templateUrl: "app/partials/login.html"
-        })     
+        })  
         .state('profile', {
            url: "/profile",
            controller: 'profileCtrl as vm',
